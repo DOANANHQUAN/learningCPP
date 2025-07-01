@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dynamic Programming</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap&subset=vietnamese"
       rel="stylesheet"
@@ -18,6 +18,74 @@
     <div id="content">
       <div class="main-title">
         <span class="text">Dynamic Programming (Quy hoạch động)</span>
+      </div>
+
+      <div class="main">
+        <div class="section" id="s1">
+          <h1 class="section-title">I. Khái niệm</h1>
+          <p>
+            <span class="highlight">Dynamic programming (Quy hoạch động)</span>
+
+            là một kỹ thuật lập trình được sử dụng để giải quyết những bài toán
+            <span class="highlight">có tính chất lặp lại</span>. Thay vì giải đi
+            giải lại cùng một bài toán nhiều lần như trong đệ quy, ta lưu kết
+            quả trung gian để sử dụng lại, từ đó giảm được thời gian tính toán.
+            <br />
+            <br />
+
+            <span class="bold">Tóm tắt ý tưởng chính của quy hoạch động:</span>
+            <br />
+            <span class="space"
+              >1. Sử dụng một mảng dp để lưu những giá trị của bài toán nhỏ và
+              xác định xem <span class="highlight">dp[i]</span> biểu diễn cho
+              cái gì. Ví dụ với bài toán Fibonacci, dp[i] biểu diễn cho số
+              fibonacci thứ i.</span
+            >
+            <br />
+            <span class="space">
+              2. Dựa vào trạng thái nhỏ hơn để tính trạng thái hiện tại
+            </span>
+            <br />
+            <span class="space"> 3. Khởi tạo giá trị ban đầu </span>
+            <br />
+            <span class="space"
+              >4. Tính dần kết quả theo thứ tự tăng hoặc sử dụng đệ quy có nhớ
+              (memoization).</span
+            >
+            <br />
+            <span class="space">5. Trả về kết quả cuối cùng</span>
+
+            <br />
+            <br />
+
+            <span class="bold">Ví dụ: Tính số Fibonacci thứ n</span>
+            <br />
+            <span class="space bold">Cách 1: Đệ quy (rất chậm)</span>
+            <br />
+            <span class="space">
+              <img src="./images/fibr.png" alt="" />
+            </span>
+            <br />
+            <span class="space bold">Cách 2: Quy hoạch động</span>
+            <br />
+            <span class="space">
+              <img src="./images/fibdp.png" alt="" />
+            </span>
+            <br />
+            <br />
+            <span class="bold">Khi nào cần dùng quy hoạch động?</span>
+            <br />
+            <span class="space"
+              >Bạn cần dùng quy hoạch động nếu bài toán có thể chia thành các
+              bài toán nhỏ hơn, kết quả bài toán lớn phụ thuộc vào bài toán con,
+              các bài toán con trùng nhau.</span
+            >
+          </p>
+        </div>
+
+        <div class="section">
+          <h1 class="section-title">II. Bài tập</h1>
+        </div>
       </div>
     </div>
   </body>
