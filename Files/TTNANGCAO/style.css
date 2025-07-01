@@ -27,6 +27,7 @@ body {
 .space {
   margin-left: 30px;
 }
+/* GLOBAL CLASSES */
 
 .main-title {
   margin: 0 auto;
@@ -48,5 +49,41 @@ body {
 
 .section .section-title {
   font-weight: 580;
+  margin-bottom: 30px;
+}
+
+.work .work-title {
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  width: fit-content;
+
   margin-bottom: 20px;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    height: 3px;
+    background-color: #e0e0e0;
+    width: calc(100% + 25px);
+  }
+}
+
+.work-ex {
+  margin: 0 auto;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 8px;
 }
