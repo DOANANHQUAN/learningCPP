@@ -57,7 +57,7 @@ body {
     left: 0;
     bottom: 0;
 
-    height: 3px;
+    height: 1.8px;
     background-color: #e7e7e7;
     width: calc(100% + 25px);
   }
