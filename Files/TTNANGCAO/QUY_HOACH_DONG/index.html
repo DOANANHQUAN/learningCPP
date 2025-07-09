@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dynamic Programming</title>
     <link rel="stylesheet" href="../style.css" />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap&subset=vietnamese"
       rel="stylesheet"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap&subset=vietnamese"
       rel="stylesheet"
-    />
+    /> -->
   </head>
   <body>
     <div id="content">
@@ -289,6 +289,121 @@
                     <td>6</td>
                     <td>
                       <img src="./images/WCS2.webp" alt="" />
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="work">
+            <div class="work-title">Bài 6: Kẻ trộm (HOUSEROBBER.cpp)</div>
+            <div class="work-desc">
+              <p>
+                Có n ngôi nhà trên một đường thẳng, mỗi nhà có số tiền là a[i].
+                Có một tên trộm muốn lấy tiền từ những ngôi nhà này, nhưng không
+                thể cướp 2 nhà liền kề nhau.
+              </p>
+              <div class="work-rq">
+                <span class="bold">Yêu cầu: </span>Tìm số tiền lớn nhất mà tên
+                trộm có thể cướp được.
+                <br />
+                <span class="bold">Input: </span>
+                <br />
+                - Dòng đầu tiên nhập vào n là số nhà. <br />
+                - Dòng thứ hai chứa số tiền của mỗi nhà.
+                <br />
+                <span class="bold">Output: </span>Số tiền lớn nhất có thể cướp
+                được
+                <br />
+                <span class="bold">Ví dụ:</span>
+                <table class="work-ex">
+                  <tr>
+                    <th>Input</th>
+                    <th>Output</th>
+                    <th>Giải thích</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      7
+                      <br />
+                      6 7 1 3 8 2 4
+                    </td>
+                    <td>19</td>
+                    <td>
+                      Tên trộm sẽ cướp ngôi nhà số 1, 3, 5 và 7. Tổng số tiền là
+                      6 + 1 + 8 + 4 = 19.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      5
+                      <br />
+                      5 3 4 11 2
+                    </td>
+                    <td>16</td>
+                    <td>
+                      Tên trộm sẽ cướp ngồi nhà số 1 và 4. Tổng số tiền là 5 +
+                      11 = 16.
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="work">
+            <div class="work-title">
+              Bài 7: Đường đi nhỏ nhất (MINCOSTPATH.cpp)
+            </div>
+            <div class="work-desc">
+              <p>
+                Bạn được cho một ma trận 2 chiều có kích thước
+                <span class="highlight">m x n</span>, trong đó mỗi ô biểu diễn
+                chi phí cần thiết để đi qua ô đó. Mỗi lần bạn có thể di chuyển
+                như sau:
+                <br />
+                - Phải (i, j + 1)
+                <br />
+                - Xuống (i + 1, j)
+                <br />
+                - Chéo (i + 1, j + 1)
+              </p>
+              <div class="work-rq">
+                <span class="bold">Yêu cầu: </span>Hãy tính chi phí nhỏ nhất để
+                đi từ ô (0, 0) đến ô (m, n).
+                <br />
+                <span class="bold">Input: </span>
+                <br />
+                - Dòng đầu tiên chứa 2 số m và n là số hàng và số cột của ma
+                trận.
+                <br />
+                - Dòng thứ hai lần lượt chứa các giá trị của ma trận đó.
+                <br />
+                <span class="bold">Output: </span>Chi phí ít nhất để đi xuống ô
+                (m, n)
+                <br />
+                <span class="bold">Ví dụ:</span>
+                <table class="work-ex">
+                  <tr>
+                    <th>Input</th>
+                    <th>Output</th>
+                    <th>Giải thích</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      3 3
+                      <br />
+                      1 2 3
+                      <br />
+                      4 8 2
+                      <br />
+                      1 5 3
+                    </td>
+                    <td>8</td>
+                    <td>
+                      Để đi xuống ô (m, n) với chi phí ít nhất, ta đi theo cách
+                      sau: (0, 0) -> (0, 1) -> (1, 2) -> (2, 2).
                     </td>
                   </tr>
                 </table>
